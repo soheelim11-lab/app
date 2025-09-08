@@ -35,17 +35,17 @@ const Home = () => {
   const categories = [
     {
       title: 'Electronics',
-      image: 'https://d2kicztbug9uwp.cloudfront.net/products/IT/electronics.png',
+      image: 'electronics.png',
       description: 'Latest gadgets and devices'
     },
     {
       title: 'Fashion',
-      image: 'https://d2kicztbug9uwp.cloudfront.net/products/fashion/fashion.png',
+      image: 'fashion.png',
       description: 'Trendy clothing and accessories'
     },
     {
       title: 'Home & Living',
-      image: 'https://d2kicztbug9uwp.cloudfront.net/products/living/living.png',
+      image: 'living.png',
       description: 'Everything for your home'
     }
   ];
