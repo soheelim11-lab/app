@@ -27,9 +27,6 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
-      
-    - name: Debug AWS Account ID
-      run: echo "AWS Account ID: ${{ secrets.AWS_ACCOUNT_ID }}" # 이 줄을 추가
 
     - name: Build Docker image
       id: build-image
@@ -37,7 +34,7 @@ jobs:
         cd frontend # 애플리케이션 디렉토리로 이동
         docker build -t frontend-repo:latest .
         IMAGE_TAG=$(git rev-parse --short HEAD)
-        docker tag frontend-repo:latest $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-2.amazonaws.com/user13-frontend-repo:$IMAGE_TAG
+        docker tag frontend-repo:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/user13-frontend-repo:$IMAGE_TAG
         echo "image_tag=$IMAGE_TAG" >> $GITHUB_OUTPUT
 
     - name: Install Trivy
