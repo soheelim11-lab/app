@@ -5,9 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import SecurityIcon from '@mui/icons-material/Security';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
-import electronicsImg from './electronics.png';
-import fashionImg from './fashion.png';
-import livingImg from './living.png';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -38,17 +36,17 @@ const Home = () => {
   const categories = [
     {
       title: 'Electronics',
-      image: electronicsImg,
+      image: '/images/electronics.png',
       description: 'Latest gadgets and devices'
     },
     {
       title: 'Fashion',
-      image: fashionImg,
+      image: '/images/fashion.png',
       description: 'Trendy clothing and accessories'
     },
     {
       title: 'Home & Living',
-      image: livingImg,
+      image: '/images/living.png',
       description: 'Everything for your home'
     }
   ];
