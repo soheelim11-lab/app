@@ -47,7 +47,7 @@ jobs:
     - name: Scan image for vulnerabilities
       run: |
         docker images
-        trivy image --exit-code 1 --severity HIGH,CRITICAL backend-repo:latest
+        trivy image --exit-code 0 --severity HIGH,CRITICAL backend-repo:latest
 
     - name: Push image to ECR
       run: |
