@@ -24,4 +24,4 @@ patches:
 configMapGenerator:
 - name: frontend-config
   literals:
-  - REACT_APP_API_BASE_URL=http://backend-service.default.svc.cluster.local
+  - REACT_APP_API_BASE_URL=http://k8s-shopping-backendi-1abe1a437d-631258842.ap-northeast-2.elb.amazonaws.com
