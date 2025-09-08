@@ -36,17 +36,17 @@ const Home = () => {
   const categories = [
     {
       title: 'Electronics',
-      image: '/images/electronics.png',
+      image: '/electronics.png',
       description: 'Latest gadgets and devices'
     },
     {
       title: 'Fashion',
-      image: '/images/fashion.png',
+      image: '/fashion.png',
       description: 'Trendy clothing and accessories'
     },
     {
       title: 'Home & Living',
-      image: '/images/living.png',
+      image: '/living.png',
       description: 'Everything for your home'
     }
   ];
