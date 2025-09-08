@@ -55,7 +55,7 @@ jobs:
 
     - name: Update deployment manifest
       run: |
-        sed -i "s|name: backend-image|name: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo|g" backend/k8s/backend/overlays/aws/kustomization.yaml
+        sed -i "s|newName:.*|newName: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo|g" backend/k8s/backend/overlays/aws/kustomization.yaml
         sed -i "s|newTag:.*|newTag: ${{ steps.build-image.outputs.image_tag }}|g" backend/k8s/backend/overlays/aws/kustomization.yaml
         git config user.name github-actions
         git config user.email github-actions@github.com
