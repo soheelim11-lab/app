@@ -9,9 +9,9 @@ replicas:
   name: backend
 
 images:
-- name: backend-image
+- name: 833558168913.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo
   newName: 833558168913.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo
-  newTag: latest
+  newTag: 1204b56
 
 patches:
 - path: resource-patch.yaml
