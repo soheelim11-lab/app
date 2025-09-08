@@ -35,7 +35,7 @@ const Home = () => {
   const categories = [
     {
       title: 'Electronics',
-      image: 'https://d2kicztbug9uwp.cloudfront.net/products/IT/electrics.png',
+      image: 'https://d2kicztbug9uwp.cloudfront.net/products/IT/electronics.png',
       description: 'Latest gadgets and devices'
     },
     {
