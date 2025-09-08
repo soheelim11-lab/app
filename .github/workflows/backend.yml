@@ -1,4 +1,4 @@
-name: CI for Shopping Mall App
+name: Shopping Mall App Backend
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - 'backend/**'  # 변경이 발생한 애플리케이션 디렉토리로 설정
 
 jobs:
-  build_and_scan:
+  Backend:
     runs-on: ubuntu-latest
     permissions:
       contents: write # Git에 파일 변경 내용을 푸시하기 위한 권한
