@@ -22,21 +22,21 @@ products = [
         "name": "Smartphone",
         "description": "Latest model smartphone with amazing features",
         "price": 999.99,
-        "image_url": "https://shop-image-sample-bucket.s3.ap-northeast-2.amazonaws.com/products/IT/smartphone.png"
+        "image_url": "https://d2kicztbug9uwp.cloudfront.net/products/IT/smartphone.png"
     },
     {
         "id": 2,
         "name": "Laptop",
         "description": "Powerful laptop for work and gaming",
         "price": 1499.99,
-        "image_url": "https://shop-image-sample-bucket.s3.ap-northeast-2.amazonaws.com/products/IT/laptop.png"
+        "image_url": "https://d2kicztbug9uwp.cloudfront.net/products/IT/laptop.png"
     },
     {
         "id": 3,
         "name": "Headphones",
         "description": "Noise-cancelling wireless headphones",
         "price": 199.99,
-        "image_url": "https://shop-image-sample-bucket.s3.ap-northeast-2.amazonaws.com/products/IT/headphone.png"
+        "image_url": "https://d2kicztbug9uwp.cloudfront.net/products/IT/headphone.png"
     }
 ]
 
