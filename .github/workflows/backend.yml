@@ -55,9 +55,10 @@ jobs:
 
     - name: Update deployment manifest
       run: |
-        sed -i "s|image:.*|image: ${{ secrets.AWS_ACCOUNT_ID }}D.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo:${{ steps.build-image.outputs.image_tag }}|g" backend/k8s/backend/base/deployment.yaml
+        sed -i "s|name: backend-image|name: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/user13-backend-repo|g" backend/k8s/backend/overlays/aws/kustomization.yaml
+        sed -i "s|newTag:.*|newTag: ${{ steps.build-image.outputs.image_tag }}|g" backend/k8s/backend/overlays/aws/kustomization.yaml
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add backend/k8s/backend/base/deployment.yaml
+        git add backend/k8s/backend/overlays/aws/kustomization.yaml
         git commit -m "chore(ci): update backend image tag to ${{ steps.build-image.outputs.image_tag }}"
-        git pushname: CI for Shopping Mall App
+        git push
