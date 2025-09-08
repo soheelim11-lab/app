@@ -62,7 +62,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundImage: 'url(https://shop-image-sample-bucket.s3.ap-northeast-2.amazonaws.com/products/living/living.png)',
+          backgroundImage: 'url(https://d2kicztbug9uwp.cloudfront.net/products/living/living.png)',
           height: '60vh',
           display: 'flex',
           alignItems: 'center',
